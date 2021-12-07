@@ -1,20 +1,27 @@
 @font-face {
   font-family: "APL385";
-  src: url("Apl385.ttf") format("truetype");
-  font-weight: bold;
+  src: local("APL385 Unicode"), url(Apl385.ttf) format("truetype");
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "APL333";
+  src: local("APL333"), url(Apl333.ttf) format("truetype");
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  font-family: "APL385";
+  font-family: "APL333";
 }
 
 .glyph {
   background-color: #ddccff;
-  border-right: none;
+  border-left: 1px solid #a2a9b1;
   font-size: 1.4em;
-  font-weight: bold;
   padding: 0.2em 1.2em;
+  font-family: "APL385" !important;
 }
 
 td {
@@ -31,14 +38,5 @@ tr {
 
 table {
   border-spacing: 2px;
-  background-color: #ffffff;
   border-collapse: collapse;
-}
-
-pre,
-code,
-tt,
-kbd,
-samp {
-  font-family: monospace, monospace;
 }
