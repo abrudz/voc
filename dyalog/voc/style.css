@@ -16,12 +16,17 @@ body {
   font-family: "APL333";
 }
 
-.glyph {
+.function,
+.moperator {
   background-color: #ddccff;
   border-left: 1px solid #a2a9b1;
   font-size: 1.4em;
   padding: 0.2em 1.2em;
   font-family: "APL385" !important;
+}
+
+.moperator{
+  background-color: #cceeff !important;
 }
 
 td {
