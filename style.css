@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "APL385";
+  src: url("Apl385.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "APL385";
+}
+
+.glyph {
+  background-color: #ddccff;
+  border-right: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.2em 1.2em;
+}
+
+td {
+  border: 1px solid #a2a9b1;
+  padding: 0.2em 0.4em;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
+tr {
+  border: 1px solid #a2a9b1;
+}
+
+table {
+  border-spacing: 2px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+pre,
+code,
+tt,
+kbd,
+samp {
+  font-family: monospace, monospace;
+}
