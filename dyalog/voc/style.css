@@ -1,3 +1,29 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  text-decoration:none;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  border: 10px solid #eee;
+}
+
+main {
+  overflow: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 @font-face {
   font-family: "APL385";
   src: local("APL385 Unicode"), url(Apl385.ttf) format("truetype");
@@ -16,17 +42,24 @@ body {
   font-family: "APL333";
 }
 
+main {
+  padding: 2em;
+}
+
 .function,
 .moperator {
-  background-color: #ddccff;
   border-left: 1px solid #a2a9b1;
   font-size: 1.4em;
   padding: 0.2em 1.2em;
-  font-family: "APL385" !important;
+  font-family: "APL385";
 }
 
-.moperator{
-  background-color: #cceeff !important;
+.function {
+  background-color: #ddccff;
+}
+
+.moperator {
+  background-color: #cceeff;
 }
 
 td {
@@ -46,6 +79,22 @@ table {
   border-collapse: collapse;
 }
 
-h1 {
+h1,
+h2 {
+  color: #000;
+  background: none;
   font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+p {
+  top: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1ex 0;
 }
