@@ -4,395 +4,480 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <main>
       <h1>Vocabulary</h1>
-      <table>
-        <tr>
-          <td colspan="6" style="text-align: center">COLOR CODE</td>
-        </tr>
-        <tr>
-          <td style="background-color: #ddccff">Function</td>
-          <td style="background-color: #cceeff">Monadic Operator</td>
-          <td style="background-color: #eeffcc">Dyadic Operator</td>
-        </tr>
-      </table>
-      <h2>Primitive Functions</h2>
-      <table>
-        <tr>
-          <td class="function">+</td>
-          <td>Conjugate</td>
-          <td>·</td>
-          <td>Plus</td>
-          <td class="function">-</td>
-          <td>Negate</td>
-          <td>·</td>
-          <td>Minus</td>
-          <td class="function">×</td>
-          <td>Direction</td>
-          <td>·</td>
-          <td>Times</td>
-          <td class="function">÷</td>
-          <td>Reciprocal</td>
-          <td>·</td>
-          <td>Divide</td>
-        </tr>
-        <tr>
-          <td class="function">⌈</td>
-          <td>Ceiling</td>
-          <td>·</td>
-          <td>Maximum</td>
-          <td class="function">⌊</td>
-          <td>Floor</td>
-          <td>·</td>
-          <td>Minimum</td>
-          <td class="function">*</td>
-          <td>Exponential</td>
-          <td>·</td>
-          <td>Power</td>
-          <td class="function">⍟</td>
-          <td>
-            Natural 
-            Log
-          </td>
-          <td>·</td>
-          <td>Logarithm</td>
-        </tr>
-        <tr>
-          <td class="function">○</td>
-          <td>Pi times</td>
-          <td>·</td>
-          <td>Circular</td>
-          <td class="function">!</td>
-          <td>Factorial</td>
-          <td>·</td>
-          <td>Binomial</td>
-          <td class="function">?</td>
-          <td>Roll</td>
-          <td>·</td>
-          <td>Deal</td>
-          <td class="function">|</td>
-          <td>Magnitude</td>
-          <td>·</td>
-          <td>Residue</td>
-        </tr>
-        <tr>
-          <td class="function">∧</td>
-          <td></td>
-          <td>·</td>
-          <td>LCM (And)</td>
-          <td class="function">∨</td>
-          <td></td>
-          <td>·</td>
-          <td>GCD (Or)</td>
-          <td class="function">⍲</td>
-          <td></td>
-          <td>·</td>
-          <td>Nand</td>
-          <td class="function">⍱</td>
-          <td></td>
-          <td>·</td>
-          <td>Nor</td>
-        </tr>
-        <tr style="text-align: right; border-left: none; border-right: none">
-          <td style="color: white">0</td>
-        </tr>
-        <tr>
-          <td class="function">=</td>
-          <td></td>
-          <td>·</td>
-          <td>Equal</td>
-          <td class="function">≠</td>
-          <td>
-            Unique 
-            mask
-          </td>
-          <td>·</td>
-          <td>Not equal</td>
-          <td class="function">≡</td>
-          <td>Depth</td>
-          <td>·</td>
-          <td>Match</td>
-          <td class="function">≢</td>
-          <td>Tally</td>
-          <td>·</td>
-          <td>Not match</td>
-        </tr>
-        <tr>
-          <td class="function"><</td>
-          <td></td>
-          <td>·</td>
-          <td>Less than</td>
-          <td class="function">≤</td>
-          <td></td>
-          <td>·</td>
-          <td>
-            Less or 
-            equal
-          </td>
-          <td class="function">≥</td>
-          <td></td>
-          <td>·</td>
-          <td>
-            Greater or 
-            equal
-          </td>
-          <td class="function">></td>
-          <td></td>
-          <td>·</td>
-          <td>Greater than</td>
-        </tr>
-        <tr>
-          <td class="function">⌷</td>
-          <td>Materialise</td>
-          <td>·</td>
-          <td>Index</td>
-          <td class="function">↑</td>
-          <td>Mix</td>
-          <td>·</td>
-          <td>Take</td>
-          <td class="function">↓</td>
-          <td>Split</td>
-          <td>·</td>
-          <td>Drop</td>
-          <td class="function">⍴</td>
-          <td>Shape</td>
-          <td>·</td>
-          <td>Reshape</td>
-        </tr>
-        <tr>
-          <td class="function">⊂</td>
-          <td>Enclose</td>
-          <td>·</td>
-          <td>
-            Partitioned
-            enclose
-          </td>
-          <td class="function">⊃</td>
-          <td>First</td>
-          <td>·</td>
-          <td>Pick</td>
-          <td class="function">⊣</td>
-          <td>Same</td>
-          <td>·</td>
-          <td>Left</td>
-          <td class="function">⊢</td>
-          <td>Same</td>
-          <td>·</td>
-          <td>Right</td>
-        </tr>
-        <tr style="text-align: right; border-left: none; border-right: none">
-          <td style="color: white">0</td>
-        </tr>
-        <tr>
-          <td class="function">⊆</td>
-          <td>Nest</td>
-          <td>·</td>
-          <td>Partition</td>
-          <td class="function">∪</td>
-          <td>Unique</td>
-          <td>·</td>
-          <td>Union</td>
-          <td class="function">∩</td>
-          <td></td>
-          <td>·</td>
-          <td>Intersection</td>
-          <td class="function">~</td>
-          <td>Not</td>
-          <td>·</td>
-          <td>Without</td>
-        </tr>
-        <tr>
-          <td class="function">⍳</td>
-          <td>Indices</td>
-          <td>·</td>
-          <td>Indices of</td>
-          <td class="function">⍸</td>
-          <td>Where</td>
-          <td>·</td>
-          <td>
-            Interval
-            index
-          </td>
-          <td class="function">∊</td>
-          <td>Enlist</td>
-          <td>·</td>
-          <td>Member of</td>
-          <td class="function">⍷</td>
-          <td></td>
-          <td>·</td>
-          <td>Find</td>
-        </tr>
-        <tr>
-          <td class="function">/</td>
-          <td></td>
-          <td>·</td>
-          <td>Replicate</td>
-          <td class="function">\</td>
-          <td></td>
-          <td>·</td>
-          <td>Expand</td>
-          <td class="function">⌿</td>
-          <td></td>
-          <td>·</td>
-          <td>
-            Replicate
-            first
-          </td>
-          <td class="function">⍀</td>
-          <td></td>
-          <td>·</td>
-          <td>
-            Expand
-            first
-          </td>
-        </tr>
-        <tr>
-          <td class="function">⌽</td>
-          <td>Reverse</td>
-          <td>·</td>
-          <td>Rotate</td>
-          <td class="function">⊖</td>
-          <td>
-            Reverse
-            first
-          </td>
-          <td>·</td>
-          <td>
-            Rotate
-            first
-          </td>
-          <td class="function">,</td>
-          <td>Enlist</td>
-          <td>·</td>
-          <td>Catenate</td>
-          <td class="function">⍪</td>
-          <td>Table</td>
-          <td>·</td>
-          <td>
-            Catenate
-            first
-          </td>
-        </tr>
-        <tr style="text-align: right; border-left: none; border-right: none">
-          <td style="color: white">0</td>
-        </tr>
-        <tr>
-          <td class="function">⍉</td>
-          <td>Transpose</td>
-          <td>·</td>
-          <td>
-            Reorder 
-            axes
-          </td>
-          <td class="function">⊥</td>
-          <td></td>
-          <td>·</td>
-          <td>Decode</td>
-          <td class="function">⊤</td>
-          <td></td>
-          <td>·</td>
-          <td>Encode</td>
-          <td class="function">⌹</td>
-          <td>
-            Matrix 
-            inverse
-          </td>
-          <td>·</td>
-          <td>
-            Matrix 
-            divide
-          </td>
-        </tr>
-        <tr>
-          <td class="function">⍎</td>
-          <td>Execute</td>
-          <td>·</td>
-          <td>
-            Namespace 
-            execute
-          </td>
-          <td class="function">⍕</td>
-          <td>Format</td>
-          <td>·</td>
-          <td>
-            Specified 
-            format
-          </td>
-          <td class="function">⍋</td>
-          <td>
-            Grade 
-            up
-          </td>
-          <td>·</td>
-          <td>
-            Collated 
-            grade by
-          </td>
-          <td class="function">⍒</td>
-          <td>
-            Grade 
-            down
-          </td>
-          <td>·</td>
-          <td>
-            Collated 
-            grade by
-          </td>
-        </tr>
-      </table>
-      <h2>Primitive Operators</h2>
-      <p>
-        X, Y, Z: any type array&emsp; M, N: numeric array&emsp; f, g, h:
-        function&emsp; s: scalar&emsp; v: vector&emsp; m: matrix
-      </p>
-      <table>
-        <tr>
-          <td class="moperator">f¨</td>
-          <td colspan="3">Each</td>
-          <td class="moperator">X⍨</td>
-          <td colspan="3">Constant</td>
-          <td class="moperator">f⍨</td>
-          <td>Self</td>
-          <td>·</td>
-          <td>Swap</td>
-          <td class="moperator">Ns⌶</td>
-          <td>System</td>
-          <td>·</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="moperator">f/</td>
-          <td>Reduce</td>
-          <td>·</td>
-          <td>
-            N-Wise 
-            reduce
-          </td>
-          <td class="moperator">f⌿</td>
-          <td>
-            Reduce 
-            first
-          </td>
-          <td>·</td>
-          <td>
-            N-Wise 
-            reduce first
-          </td>
-          <td class="moperator">f\</td>
-          <td>Scan</td>
-          <td>·</td>
-          <td></td>
-          <td class="moperator">f⍀</td>
-          <td>
-            Scan 
-            first
-          </td>
-          <td>·</td>
-          <td></td>
-        </tr>
-      </table>
+      <section>
+        <div>
+          <h2>Primitive Functions</h2>
+          <table>
+            <tr>
+              <td style="text-align: right">Plus</td>
+              <td class="function">+</td>
+              <td>Conjugate</td>
+              <td></td>
+              <td style="text-align: right">Minus</td>
+              <td class="function">-</td>
+              <td>Negate</td>
+              <td></td>
+              <td style="text-align: right">Times</td>
+              <td class="function">×</td>
+              <td>Direction</td>
+              <td></td>
+              <td style="text-align: right">Divide</td>
+              <td class="function">÷</td>
+              <td>Reciprocal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Maximum</td>
+              <td class="function">⌈</td>
+              <td>Ceiling</td>
+              <td></td>
+              <td style="text-align: right">Minimum</td>
+              <td class="function">⌊</td>
+              <td>Floor</td>
+              <td></td>
+              <td style="text-align: right">Power</td>
+              <td class="function">*</td>
+              <td>Exponential</td>
+              <td></td>
+              <td style="text-align: right">Logarithm</td>
+              <td class="function">⍟</td>
+              <td>Natural Log</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Circular</td>
+              <td class="function">○</td>
+              <td>Pi times</td>
+              <td></td>
+              <td style="text-align: right">Binomial</td>
+              <td class="function">!</td>
+              <td>Factorial</td>
+              <td></td>
+              <td style="text-align: right">Deal</td>
+              <td class="function">?</td>
+              <td>Roll</td>
+              <td></td>
+              <td style="text-align: right">Residue</td>
+              <td class="function">|</td>
+              <td>Magnitude</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">And/LCM</td>
+              <td class="function">∧</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Or/GCD</td>
+              <td class="function">∨</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Nand</td>
+              <td class="function">⍲</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Nor</td>
+              <td class="function">⍱</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr
+              style="text-align: right; border-left: none; border-right: none"
+            >
+              <td style="color: white">0</td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Equal</td>
+              <td class="function">=</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Not equal</td>
+              <td class="function">≠</td>
+              <td>
+                Unique <br />
+                mask
+              </td>
+              <td></td>
+              <td style="text-align: right">Match</td>
+              <td class="function">≡</td>
+              <td>Depth</td>
+              <td></td>
+              <td style="text-align: right">Not match</td>
+              <td class="function">≢</td>
+              <td>Tally</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Less than</td>
+              <td class="function"><</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">
+                Less or <br />
+                equal
+              </td>
+              <td class="function">≤</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">
+                Greater or <br />
+                equal
+              </td>
+              <td class="function">≥</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Greater than</td>
+              <td class="function">></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Index</td>
+              <td class="function">⌷</td>
+              <td>Materialise</td>
+              <td></td>
+              <td style="text-align: right">Take</td>
+              <td class="function">↑</td>
+              <td>Mix</td>
+              <td></td>
+              <td style="text-align: right">Drop</td>
+              <td class="function">↓</td>
+              <td>Split</td>
+              <td></td>
+              <td style="text-align: right">Reshape</td>
+              <td class="function">⍴</td>
+              <td>Shape</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                Partitioned <br />
+                enclose
+              </td>
+              <td class="function">⊂</td>
+              <td>Enclose</td>
+              <td></td>
+              <td style="text-align: right">Pick</td>
+              <td class="function">⊃</td>
+              <td>First</td>
+              <td></td>
+              <td style="text-align: right">Left</td>
+              <td class="function">⊣</td>
+              <td>Same</td>
+              <td></td>
+              <td style="text-align: right">Right</td>
+              <td class="function">⊢</td>
+              <td>Same</td>
+              <td></td>
+            </tr>
+            <tr
+              style="text-align: right; border-left: none; border-right: none"
+            >
+              <td style="color: white">0</td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Partition</td>
+              <td class="function">⊆</td>
+              <td>Nest</td>
+              <td></td>
+              <td style="text-align: right">Union</td>
+              <td class="function">∪</td>
+              <td>Unique</td>
+              <td></td>
+              <td style="text-align: right">Intersection</td>
+              <td class="function">∩</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Without</td>
+              <td class="function">~</td>
+              <td>Not</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Indices of</td>
+              <td class="function">⍳</td>
+              <td>Indices</td>
+              <td></td>
+              <td style="text-align: right">
+                Interval <br />
+                index
+              </td>
+              <td class="function">⍸</td>
+              <td>Where</td>
+              <td></td>
+              <td style="text-align: right">Member of</td>
+              <td class="function">∊</td>
+              <td>Enlist</td>
+              <td></td>
+              <td style="text-align: right">Find</td>
+              <td class="function">⍷</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Replicate</td>
+              <td class="function">/</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Expand</td>
+              <td class="function">\</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">
+                Replicate <br />
+                first
+              </td>
+              <td class="function">⌿</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">
+                Expand <br />
+                first
+              </td>
+              <td class="function">⍀</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Rotate</td>
+              <td class="function">⌽</td>
+              <td>Reverse</td>
+              <td></td>
+              <td style="text-align: right">
+                Rotate <br />
+                first
+              </td>
+              <td class="function">⊖</td>
+              <td>
+                Reverse <br />
+                first
+              </td>
+              <td></td>
+              <td style="text-align: right">Catenate</td>
+              <td class="function">,</td>
+              <td>Enlist</td>
+              <td></td>
+              <td style="text-align: right">
+                Catenate <br />
+                first
+              </td>
+              <td class="function">⍪</td>
+              <td>Table</td>
+              <td></td>
+            </tr>
+            <tr
+              style="text-align: right; border-left: none; border-right: none"
+            >
+              <td style="color: white">0</td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                Reorder <br />
+                axes
+              </td>
+              <td class="function">⍉</td>
+              <td>Transpose</td>
+              <td></td>
+              <td style="text-align: right">Decode</td>
+              <td class="function">⊥</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">Encode</td>
+              <td class="function">⊤</td>
+              <td></td>
+              <td></td>
+              <td style="text-align: right">
+                Matrix <br />
+                divide
+              </td>
+              <td class="function">⌹</td>
+              <td>
+                Matrix <br />
+                inverse
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                Namespace <br />
+                execute
+              </td>
+              <td class="function">⍎</td>
+              <td>Execute</td>
+              <td></td>
+              <td style="text-align: right">
+                Specified <br />
+                format
+              </td>
+              <td class="function">⍕</td>
+              <td>Format</td>
+              <td></td>
+              <td style="text-align: right">
+                Collated <br />
+                grade by
+              </td>
+              <td class="function">⍋</td>
+              <td>Grade up</td>
+              <td></td>
+              <td style="text-align: right">
+                Collated <br />
+                grade by
+              </td>
+              <td class="function">⍒</td>
+              <td>Grade down</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2>Primitive Monadic Operators</h2>
+          <p>A: array&emsp; f: function</p>
+          <table>
+            <tr>
+              <td style="text-align: right">Each</td>
+              <td class="moperator">f¨</td>
+              <td>Each</td>
+              <td></td>
+              <td style="text-align: right">Constant</td>
+              <td class="moperator">A⍨</td>
+              <td>Constant</td>
+              <td></td>
+              <td style="text-align: right">Swap</td>
+              <td class="moperator">f⍨</td>
+              <td>Self</td>
+              <td></td>
+              <td style="text-align: right">System</td>
+              <td class="moperator">A⌶</td>
+              <td>System</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">
+                N-Wise <br />
+                reduce
+              </td>
+              <td class="moperator">f/</td>
+              <td>Reduce</td>
+              <td></td>
+              <td style="text-align: right">
+                N-Wise <br />
+                reduce first
+              </td>
+              <td class="moperator">f⌿</td>
+              <td>
+                Reduce <br />
+                first
+              </td>
+              <td></td>
+              <td style="text-align: right"></td>
+              <td class="moperator">f\</td>
+              <td>Scan</td>
+              <td></td>
+              <td style="text-align: right"></td>
+              <td class="moperator">f⍀</td>
+              <td>
+                Scan <br />
+                first
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Key</td>
+              <td class="moperator">f⌸</td>
+              <td>
+                Index <br />
+                key
+              </td>
+              <td></td>
+              <td style="text-align: right">Spawn</td>
+              <td class="moperator">f&</td>
+              <td>Spawn</td>
+              <td></td>
+              <td style="text-align: right">Axis</td>
+              <td class="moperator">f[A]</td>
+              <td>Axis</td>
+              <td></td>
+              <td style="text-align: right">
+                Outer <br />
+                product
+              </td>
+              <td class="moperator">∘.f</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <h2>Primitive Dyadic Operators</h2>
+          <table>
+            <p>A: array&emsp; f, g: function</p>
+            <tr>
+              <td style="text-align: right">Until</td>
+              <td class="doperator">f⍣g</td>
+              <td>Until</td>
+              <td></td>
+              <td style="text-align: right">Repeat</td>
+              <td class="doperator">f⍣A</td>
+              <td>Repeat</td>
+              <td></td>
+              <td colspan="3"></td>
+              <td></td>
+              <td style="text-align: right">Variant</td>
+              <td class="doperator">f⍠A</td>
+              <td>Variant</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Beside</td>
+              <td class="doperator">f∘g</td>
+              <td>Beside</td>
+              <td></td>
+              <td style="text-align: right"></td>
+              <td class="doperator">f∘A</td>
+              <td>Bind</td>
+              <td></td>
+              <td style="text-align: right"></td>
+              <td class="doperator">A∘f</td>
+              <td>Bind</td>
+              <td></td>
+              <td></td>
+              <td class="doperator">f⌺A</td>
+              <td>Stencil</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Atop</td>
+              <td class="doperator">f⍤g</td>
+              <td>Atop</td>
+              <td></td>
+              <td style="text-align: right">Rank</td>
+              <td class="doperator">f⍤A</td>
+              <td>Rank</td>
+              <td></td>
+              <td colspan="3"></td>
+              <td></td>
+              <td style="text-align: right">Replace</td>
+              <td class="doperator">@</td>
+              <td>Replace</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Over</td>
+              <td class="doperator">f⍥g</td>
+              <td>Over</td>
+              <td></td>
+              <td colspan="3"></td>
+              <td></td>
+              <td colspan="3"></td>
+              <td></td>
+              <td style="text-align: right">Inner <br> product</td>
+              <td class="doperator">f.g</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </section>
     </main>
   </body>
 </html>

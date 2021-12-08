@@ -2,9 +2,8 @@
 
 * {
   box-sizing: border-box;
-  text-decoration:none;
+  text-decoration: none;
 }
-
 
 html,
 body {
@@ -19,9 +18,7 @@ html {
 }
 
 main {
-  overflow: scroll;
   height: 100%;
-  -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
@@ -43,15 +40,21 @@ body {
 }
 
 main {
-  padding: 2em;
+  padding: 1em;
+}
+
+section {
+  justify-content: space-evenly;
+  display: flex;
 }
 
 .function,
-.moperator {
-  border-left: 1px solid #a2a9b1;
+.moperator,
+.doperator {
   font-size: 1.4em;
-  padding: 0.2em 1.2em;
+  padding: 0.2em 0.6em;
   font-family: "APL385";
+  text-align: center;
 }
 
 .function {
@@ -62,16 +65,12 @@ main {
   background-color: #cceeff;
 }
 
-td {
-  border: 1px solid #a2a9b1;
-  padding: 0.2em 0.4em;
-  border-left: none;
-  border-right: none;
-  text-align: center;
+.doperator {
+  background-color: #eeffcc;
 }
 
-tr {
-  border: 1px solid #a2a9b1;
+td {
+  padding: 0.2em 0.4em;
 }
 
 table {
