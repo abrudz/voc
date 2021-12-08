@@ -13,14 +13,6 @@ body {
   margin: 0px;
 }
 
-html {
-  border: 10px solid #eee;
-}
-
-main {
-  height: 100%;
-}
-
 @font-face {
   font-family: "APL385";
   src: local("APL385 Unicode"), url(Apl385.ttf) format("truetype");
@@ -91,7 +83,10 @@ h1 {
 }
 
 p {
-  top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

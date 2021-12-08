@@ -9,7 +9,7 @@
       <h1>Vocabulary</h1>
       <section>
         <div>
-          <h2>Primitive Functions</h2>
+          <h2>Functions</h2>
           <table>
             <tr>
               <td style="text-align: right">Plus</td>
@@ -332,8 +332,10 @@
           </table>
         </div>
         <div>
-          <h2>Primitive Monadic Operators</h2>
-          <p>A: array&emsp; f: function</p>
+          <div style="display: flex; width: 100%">
+            <h2 style="margin-right: 20%">Monadic Operators</h2>
+            <p style="color: 222">X: any array type&emsp; f: function</p>
+          </div>
           <table>
             <tr>
               <td style="text-align: right">Each</td>
@@ -341,7 +343,7 @@
               <td>Each</td>
               <td></td>
               <td style="text-align: right">Constant</td>
-              <td class="moperator">A⍨</td>
+              <td class="moperator">X⍨</td>
               <td>Constant</td>
               <td></td>
               <td style="text-align: right">Swap</td>
@@ -349,7 +351,7 @@
               <td>Self</td>
               <td></td>
               <td style="text-align: right">System</td>
-              <td class="moperator">A⌶</td>
+              <td class="moperator">X⌶</td>
               <td>System</td>
               <td></td>
             </tr>
@@ -396,7 +398,7 @@
               <td>Spawn</td>
               <td></td>
               <td style="text-align: right">Axis</td>
-              <td class="moperator">f[A]</td>
+              <td class="moperator">f[X]</td>
               <td>Axis</td>
               <td></td>
               <td style="text-align: right">
@@ -408,22 +410,24 @@
               <td></td>
             </tr>
           </table>
-          <h2>Primitive Dyadic Operators</h2>
+          <div style="display: flex; width: 100%">
+            <h2 style="margin-right: 20%">Dyadic Operators</h2>
+            <p style="color: 222">X, Y: any array type&emsp; f, g: function</p>
+          </div>
           <table>
-            <p>A: array&emsp; f, g: function</p>
             <tr>
               <td style="text-align: right">Until</td>
               <td class="doperator">f⍣g</td>
               <td>Until</td>
               <td></td>
               <td style="text-align: right">Repeat</td>
-              <td class="doperator">f⍣A</td>
+              <td class="doperator">f⍣Y</td>
               <td>Repeat</td>
               <td></td>
               <td colspan="3"></td>
               <td></td>
               <td style="text-align: right">Variant</td>
-              <td class="doperator">f⍠A</td>
+              <td class="doperator">f⍠Y</td>
               <td>Variant</td>
               <td></td>
             </tr>
@@ -433,15 +437,15 @@
               <td>Beside</td>
               <td></td>
               <td style="text-align: right"></td>
-              <td class="doperator">f∘A</td>
+              <td class="doperator">f∘Y</td>
               <td>Bind</td>
               <td></td>
               <td style="text-align: right"></td>
-              <td class="doperator">A∘f</td>
+              <td class="doperator">X∘g</td>
               <td>Bind</td>
               <td></td>
               <td></td>
-              <td class="doperator">f⌺A</td>
+              <td class="doperator">f⌺Y</td>
               <td>Stencil</td>
               <td></td>
             </tr>
@@ -451,7 +455,7 @@
               <td>Atop</td>
               <td></td>
               <td style="text-align: right">Rank</td>
-              <td class="doperator">f⍤A</td>
+              <td class="doperator">f⍤Y</td>
               <td>Rank</td>
               <td></td>
               <td colspan="3"></td>
@@ -470,7 +474,10 @@
               <td></td>
               <td colspan="3"></td>
               <td></td>
-              <td style="text-align: right">Inner <br> product</td>
+              <td style="text-align: right">
+                Inner <br />
+                product
+              </td>
               <td class="doperator">f.g</td>
               <td></td>
               <td></td>
