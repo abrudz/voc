@@ -336,9 +336,9 @@
         </div>
         <div>
           <div style="display: flex; width: 100%">
-            <h2>Monadic Operators&emsp;·&emsp;</h2>
+            <h2>Operators&emsp;·&emsp;</h2>
             <p style="font-family: APL385; color: 222">
-              X: Array&emsp; f: Function
+              X, Y: Array&emsp; f, g: Function
             </p>
           </div>
           <table>
@@ -410,18 +410,15 @@
                 Outer <br />
                 Product
               </td>
-              <td class="moperator">∘.f</td>
+              <td class="moperator">∘.g</td>
               <td></td>
               <td></td>
             </tr>
-          </table>
-          <div style="display: flex; width: 100%">
-            <h2>Dyadic Operators&#160;&emsp;·&emsp;</h2>
-            <p style="font-family: APL385; color: 222">
-              X, Y: Array&emsp; f, g: Function
-            </p>
-          </div>
-          <table>
+            <tr
+              style="text-align: right; border-left: none; border-right: none"
+            >
+              <td style="color: white">0</td>
+            </tr>
             <tr>
               <td style="text-align: right">Until</td>
               <td class="doperator">f⍣g</td>
@@ -491,18 +488,11 @@
             </tr>
           </table>
           <div>
-            <h2>Special Syntax</h2>
+            <h2>Syntax</h2>
             <table>
               <tr>
-                <td>&emsp;</td>
+                <td>&#160;&#160;&#160;&#160;</td>
                 <td></td>
-                <td class="copula">←</td>
-                <td>Assign</td>
-                <td></td>
-                <td class="copula">⍝</td>
-                <td>Comment</td>
-                <td></td>
-
                 <td class="control">→</td>
                 <td>Branch</td>
                 <td></td>
@@ -512,29 +502,44 @@
                   Separator
                 </td>
                 <td></td>
-              </tr>
-              <tr>
-                <td>&emsp;</td>
+
+                <td class="control">:</td>
+                <td>Guard</td>
                 <td></td>
-                <td class="copula">⎕</td>
-                <td>Evaluated <br />Input/Stdout</td>
-                <td></td>
-                <td class="noun">⍞</td>
+                <td class="control">::</td>
                 <td>
-                  Text <br />
-                  Input/Stderr
+                  Error <br />
+                  Guard
                 </td>
                 <td></td>
-                <td class="noun">¯</td>
-                <td>Negative</td>
-                <td></td>
-                <td class="noun">⍬</td>
-                <td>Zilde</td>
-                <td></td>
-
               </tr>
               <tr>
-                <td>&emsp;</td>
+                <td>&#160;&#160;&#160;&#160;</td>
+                <td></td>
+                <td class="function">{…}</td>
+                <td>Dfn</td>
+                <td></td>
+                <td class="moperator">{⍺⍺}</td>
+                <td>
+                  Monadic <br />
+                  Dop
+                </td>
+                <td></td>
+                <td class="doperator">{⍵⍵}</td>
+                <td>
+                  Dyadic <br />
+                  Dop
+                </td>
+                <td></td>
+                <td class="noun">⍬</td>
+                <td>
+                  Empty <br />
+                  Numeric Vector
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>&#160;&#160;&#160;&#160;</td>
                 <td></td>
                 <td class="copula">⍺</td>
                 <td>
@@ -542,16 +547,17 @@
                   Argument
                 </td>
                 <td></td>
-                <td class="copula">⍵</td>
-                <td>
-                  Right <br />
-                  Argument
-                </td>
-                <td></td>
+
                 <td class="function">∇</td>
                 <td>
                   Function <br />
                   Self
+                </td>
+                <td></td>
+                <td class="noun">⍵</td>
+                <td>
+                  Right <br />
+                  Argument
                 </td>
                 <td></td>
                 <td class="noun">#</td>
@@ -559,18 +565,11 @@
                 <td></td>
               </tr>
               <tr>
-                <td>&emsp;</td>
+                <td>&#160;&#160;&#160;&#160;</td>
                 <td></td>
                 <td class="copula">⍺⍺</td>
                 <td>
                   Left <br />
-                  Operand
-                </td>
-                <td></td>
-
-                <td class="copula">⍵⍵</td>
-                <td>
-                  Right <br />
                   Operand
                 </td>
                 <td></td>
@@ -581,14 +580,50 @@
                   Self
                 </td>
                 <td></td>
+                <td class="copula">⍵⍵</td>
+                <td>
+                  Right <br />
+                  Operand
+                </td>
+                <td></td>
                 <td class="noun">##</td>
                 <td>Parent</td>
                 <td></td>
               </tr>
-              <tr
-                style="text-align: right; border-left: none; border-right: none"
-              >
-                <td style="color: white">0</td>
+              <tr>
+                <td>&#160;&#160;&#160;&#160;</td>
+                <td></td>
+                <td class="copula">←</td>
+                <td>Assign</td>
+                <td></td>
+                <td class="copula">⍝</td>
+                <td>Comment</td>
+                <td></td>
+                <td class="copula">⎕</td>
+                <td>Evaluated <br />Input/Stdout</td>
+                <td></td>
+                <td class="noun">⍞</td>
+                <td>
+                  Text <br />
+                  Input/Stderr
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>&emsp;</td>
+                <td></td>
+                <td class="function" style="font-size: 1em">(f g h)</td>
+                <td>Fork</td>
+                <td></td>
+                <td class="function" style="font-size: 1em">(A g h)</td>
+                <td>Fork</td>
+                <td></td>
+                <td class="function" style="font-size: 1em">(g h)</td>
+                <td>Atop</td>
+                <td></td>
+                <td class="noun">¯</td>
+                <td>Negative</td>
+                <td></td>
               </tr>
             </table>
           </div>
