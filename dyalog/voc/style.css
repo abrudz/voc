@@ -42,7 +42,10 @@ section {
 
 .function,
 .moperator,
-.doperator {
+.doperator,
+.control,
+.noun,
+.copula {
   font-size: 1.4em;
   padding: 0.2em 0.6em;
   font-family: "APL385";
@@ -59,6 +62,18 @@ section {
 
 .doperator {
   background-color: #eeffcc;
+}
+
+.control{
+  background-color: #eeaaaa;
+}
+
+.noun{
+  background-color:#ffccee;
+}
+
+.copula{
+  background-color:#cccccc;
 }
 
 td {
