@@ -82,6 +82,8 @@ h1 {
   border-bottom: 1px solid #a2a9b1;
 }
 
+sub,
+sup,
 p {
   display: flex;
   justify-content: center;
