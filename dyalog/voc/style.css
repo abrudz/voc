@@ -28,7 +28,7 @@ body {
 }
 
 body {
-  font-family: "APL333";
+  font-family: "APL333", monospace;
 }
 
 main {
@@ -48,7 +48,7 @@ section {
 .copula {
   font-size: 1.4em;
   padding: 0.2em 0.6em;
-  font-family: "APL385";
+  font-family: "APL385", monospace;
   text-align: center;
 }
 
@@ -64,25 +64,20 @@ section {
   background-color: #eeffcc;
 }
 
-.control{
+.control {
   background-color: #eeaaaa;
 }
 
-.noun{
-  background-color:#ffccee;
+.noun {
+  background-color: #ffccee;
 }
 
-.copula{
-  background-color:#cccccc;
+.copula {
+  background-color: #cccccc;
 }
 
 td {
   padding: 0.2em 0.4em;
-}
-
-table {
-  border-spacing: 2px;
-  border-collapse: collapse;
 }
 
 h1,
@@ -108,4 +103,52 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 1ex 0;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+table {
+  border-spacing: 2px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table td {
+  padding: 0.325em;
+}
+
+@media screen and (max-width: 600px) {
+  .function,
+  .moperator,
+  .doperator,
+  .control,
+  .noun,
+  .copula {
+    font-size: 1em;
+    padding: 0.1625em 0.4em;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table td {
+    font-size: 0.8em;
+  }
 }
