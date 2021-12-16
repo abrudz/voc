@@ -48,6 +48,15 @@ td:nth-child(4n + 1) {
   text-align: left;
 }
 
+#syntax .function,
+#syntax .moperator,
+#syntax .doperator,
+#syntax .control,
+#syntax .noun,
+#syntax .copula {
+  text-align: center;
+}
+
 .function,
 .moperator,
 .doperator,
