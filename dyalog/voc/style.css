@@ -40,6 +40,14 @@ section {
   display: flex;
 }
 
+td:nth-child(4n + 1) {
+  text-align: right;
+}
+
+#syntax td {
+  text-align: left;
+}
+
 .function,
 .moperator,
 .doperator,
