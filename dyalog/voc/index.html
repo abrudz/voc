@@ -11,23 +11,27 @@
       <h1>
         <div style="display: flex">
           Dyalog APL - Vocabulary&emsp;·&emsp;
-          <table style="border: 1px solid #a2a9b1">
-            <tr style="font-size: 0.8em">
-              <td class="function">Verb</td>
+          <table>
+            <tr class="color-code">
+              <td class="function">Function</td>
               <td class="moperator">Monadic Operator</td>
               <td class="doperator">Dyadic Operator</td>
-              <td class="noun">Noun</td>
+              <td class="noun">Array</td>
               <td class="copula">Ambiguous</td>
               <td class="control">Control</td>
             </tr>
           </table>
+          &emsp;·&emsp;
+          <p style="font-family: APL385; color: 222; font-size: 0.6em">
+            X, Y: Arrays&emsp; f, g, h: Functions
+          </p>
         </div>
         <span style="font-size: 0.4em">&emsp;</span>
       </h1>
+      <br>
 
       <section>
         <div>
-          <h2>Functions</h2>
           <table>
             <tr>
               <td>
@@ -805,19 +809,9 @@
               <td></td>
             </tr>
           </table>
+          <br>
         </div>
         <div>
-          <div style="display: flex; width: 100%">
-            <h2>
-              <a
-                href="https://help.dyalog.com/latest/Content/Language/Primitive%20Operators/Operators%20Summarised.htm"
-                >Operators</a
-              >&emsp;·&emsp;
-            </h2>
-            <p style="font-family: APL385; color: 222">
-              X, Y: Array&emsp; f, g: Function
-            </p>
-          </div>
           <table>
             <tr>
               <td>
@@ -1024,7 +1018,9 @@
                 >
               </td>
               <td></td>
-              <td colspan="3"></td>
+              <td></td>
+              <td></td>
+              <td></td>
               <td></td>
               <td>
                 <a
@@ -1113,7 +1109,9 @@
                 >
               </td>
               <td></td>
-              <td colspan="3"></td>
+              <td></td>
+              <td></td>
+              <td></td>
               <td></td>
               <td>
                 <a
@@ -1161,255 +1159,258 @@
               <td></td>
               <td></td>
             </tr>
+            <tr
+              style="text-align: right; border-left: none; border-right: none"
+            >
+              <td style="color: white">0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="control">→</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Primitive%20Functions/Abort.htm"
+                  >Abort</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="control">⋄</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/TradFns/Statements.htm"
+                >
+                  Statement <br />
+                  Separator</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="control">:</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Guards.htm#Guards"
+                  >Guard</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="control">::</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Error%20Guards.htm#ErrorGuards"
+                >
+                  Error <br />
+                  Guard</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="function">{…}</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
+                  >Dfn</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="moperator">{⍺⍺}</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
+                >
+                  Monadic <br />
+                  Dop</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="doperator">{⍵⍵}</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
+                >
+                  Dyadic <br />
+                  Dop</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">⍬</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Primitive%20Functions/Zilde.htm"
+                >
+                  Empty <br />
+                  Numeric Vector</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="copula">⍺</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
+                >
+                  Left <br />
+                  Argument</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="function">∇</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
+                >
+                  Function <br />
+                  Self</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">⍵</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
+                >
+                  Right <br />
+                  Argument</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">#</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Namespaces/Namespaces.htm"
+                  >Root</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="copula">⍺⍺</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
+                >
+                  Left <br />
+                  Operand</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="copula">∇∇</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
+                >
+                  Operator <br />
+                  Self</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="copula">⍵⍵</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
+                >
+                  Right <br />
+                  Operand</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">##</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Namespaces/Namespaces.htm"
+                  >Parent</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="copula">←</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/latest/Content/Language/Symbols/Left%20Arrow.htm"
+                  >Assign</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="copula">⍝</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/TradFns/Statements.htm"
+                  >Comment</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="copula">⎕</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/System%20Functions/Evaluated%20Input%20Output.htm?Highlight=%E2%8E%95"
+                  >Evaluated <br />Input/Stdout</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">⍞</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/System%20Functions/Character%20Input%20Output.htm?Highlight=%E2%8D%9E"
+                >
+                  Text <br />
+                  Input/Stderr</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="function" style="font-size: 0.75em">(f g h)</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
+                  >Fork</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="function" style="font-size: 0.75em">(X g h)</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
+                  >Fork</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="function" style="font-size: 0.75em">(g h)</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
+                  >Atop</a
+                >
+              </td>
+              <td></td>
+              <td></td>
+              <td class="noun">¯</td>
+              <td>
+                <a
+                  href="https://help.dyalog.com/18.2/Content/Language/Introduction/Variables/Numbers.htm"
+                  >Negative</a
+                >
+              </td>
+            </tr>
           </table>
-          <div>
-            <h2>Syntax</h2>
-            <table id="syntax">
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="control">→</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Primitive%20Functions/Abort.htm"
-                    >Abort</a
-                  >
-                </td>
-                <td></td>
-                <td class="control">⋄</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/TradFns/Statements.htm"
-                  >
-                    Statement <br />
-                    Separator</a
-                  >
-                </td>
-                <td></td>
-
-                <td class="control">:</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Guards.htm#Guards"
-                    >Guard</a
-                  >
-                </td>
-                <td></td>
-                <td class="control">::</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Error%20Guards.htm#ErrorGuards"
-                  >
-                    Error <br />
-                    Guard</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="function">{…}</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
-                    >Dfn</a
-                  >
-                </td>
-                <td></td>
-                <td class="moperator">{⍺⍺}</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
-                  >
-                    Monadic <br />
-                    Dop</a
-                  >
-                </td>
-                <td></td>
-                <td class="doperator">{⍵⍵}</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
-                  >
-                    Dyadic <br />
-                    Dop</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">⍬</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Primitive%20Functions/Zilde.htm"
-                  >
-                    Empty <br />
-                    Numeric Vector</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="copula">⍺</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
-                  >
-                    Left <br />
-                    Argument</a
-                  >
-                </td>
-                <td></td>
-
-                <td class="function">∇</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
-                  >
-                    Function <br />
-                    Self</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">⍵</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Functions%20and%20Operators.htm"
-                  >
-                    Right <br />
-                    Argument</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">#</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Namespaces/Namespaces.htm"
-                    >Root</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="copula">⍺⍺</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
-                  >
-                    Left <br />
-                    Operand</a
-                  >
-                </td>
-                <td></td>
-
-                <td class="copula">∇∇</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Recursion.htm"
-                  >
-                    Operator <br />
-                    Self</a
-                  >
-                </td>
-                <td></td>
-                <td class="copula">⍵⍵</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/DynamicFunctions/Dynamic%20Operators.htm"
-                  >
-                    Right <br />
-                    Operand</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">##</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Namespaces/Namespaces.htm"
-                    >Parent</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="copula">←</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/latest/Content/Language/Symbols/Left%20Arrow.htm"
-                    >Assign</a
-                  >
-                </td>
-                <td></td>
-                <td class="copula">⍝</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Defined%20Functions%20and%20Operators/TradFns/Statements.htm"
-                    >Comment</a
-                  >
-                </td>
-                <td></td>
-                <td class="copula">⎕</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/System%20Functions/Evaluated%20Input%20Output.htm?Highlight=%E2%8E%95"
-                    >Evaluated <br />Input/Stdout</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">⍞</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/System%20Functions/Character%20Input%20Output.htm?Highlight=%E2%8D%9E"
-                  >
-                    Text <br />
-                    Input/Stderr</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>&#160;&#160;&#160;&#160;</td>
-                <td></td>
-                <td class="function" style="font-size: 1em">(f g h)</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
-                    >Fork</a
-                  >
-                </td>
-                <td></td>
-                <td class="function" style="font-size: 1em">(X g h)</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
-                    >Fork</a
-                  >
-                </td>
-                <td></td>
-                <td class="function" style="font-size: 1em">(g h)</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Trains.htm"
-                    >Atop</a
-                  >
-                </td>
-                <td></td>
-                <td class="noun">¯</td>
-                <td>
-                  <a
-                    href="https://help.dyalog.com/18.2/Content/Language/Introduction/Variables/Numbers.htm"
-                    >Negative</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-            </table>
-          </div>
         </div>
       </section>
     </main>

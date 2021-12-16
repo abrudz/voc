@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  padding: 1em;
+  padding: 0.8em;
 }
 
 section {
@@ -44,27 +44,14 @@ td:nth-child(4n + 1) {
   text-align: right;
 }
 
-#syntax td {
-  text-align: left;
-}
-
-#syntax .function,
-#syntax .moperator,
-#syntax .doperator,
-#syntax .control,
-#syntax .noun,
-#syntax .copula {
-  text-align: center;
-}
-
 .function,
 .moperator,
 .doperator,
 .control,
 .noun,
 .copula {
-  font-size: 1.4em;
-  padding: 0.2em 0.6em;
+  font-size: 1.2em;
+  padding: 0.3em 0.5em;
   font-family: "APL385", monospace;
   text-align: center;
 }
@@ -91,10 +78,6 @@ td:nth-child(4n + 1) {
 
 .copula {
   background-color: #cccccc;
-}
-
-td {
-  padding: 0.2em 0.4em;
 }
 
 h1,
@@ -130,12 +113,6 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-  section {
-    flex-direction: column;
-  }
-}
-
 table {
   border-spacing: 2px;
   border-collapse: collapse;
@@ -143,10 +120,22 @@ table {
 }
 
 table td {
-  padding: 0.325em;
+  padding: 0.25em;
 }
 
-@media screen and (max-width: 600px) {
+.color-code {
+  font-size: 0.8em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+@media screen and (max-width: 1648px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
   .function,
   .moperator,
   .doperator,
@@ -154,18 +143,23 @@ table td {
   .noun,
   .copula {
     font-size: 1em;
-    padding: 0.1625em 0.4em;
+    font-size: 1.2em;
+    padding: 0.2em 0.4em;
+  }
+
+  table td {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 1436px) {
+  .color-code{
+    font-size: 0.6em;
   }
 
   section {
     flex-direction: column;
   }
-
-  table {
-    border: 0;
-  }
-
-  table td {
-    font-size: 0.8em;
-  }
 }
+
+/* This sucks, fix later */
