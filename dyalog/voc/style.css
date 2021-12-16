@@ -123,8 +123,12 @@ table td {
   padding: 0.25em;
 }
 
-.color-code {
+.color-code tr {
   font-size: 0.8em;
+}
+
+.color-code{
+  display:flex;
 }
 
 h1 {
@@ -153,13 +157,33 @@ h1 {
 }
 
 @media screen and (max-width: 1436px) {
-  .color-code{
+  .color-code tr {
     font-size: 0.6em;
+  }
+
+  .color-code{
+    display: block;
+  }
+
+  .color-code > * {
+    margin: auto;
+  }
+
+  .color-code span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   section {
     flex-direction: column;
+    width: 100%;
+  }
+  section div {
+    width: 100%;
+  }
+
+  section div table {
+    margin: auto;
   }
 }
-
-/* This sucks, fix later */
