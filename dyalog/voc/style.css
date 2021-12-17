@@ -169,10 +169,18 @@ h1 {
     margin: auto;
   }
 
+  .separator {
+    display: none !important;
+  }
   .color-code span {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .color-code table{
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
   }
 
   section {
