@@ -15,14 +15,14 @@ body {
 
 @font-face {
   font-family: "APL385";
-  src: local("APL385 Unicode"), url(Apl385.ttf) format("truetype");
+  src: local("APL385 Unicode"), url(../fonts/Apl385.ttf) format("truetype");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "APL333";
-  src: local("APL333"), url(Apl333.ttf) format("truetype");
+  src: local("APL333"), url(../fonts/Apl333.ttf) format("truetype");
   font-style: normal;
   font-display: swap;
 }
@@ -127,8 +127,8 @@ table td {
   font-size: 0.8em;
 }
 
-.color-code{
-  display:flex;
+.color-code {
+  display: flex;
 }
 
 h1 {
@@ -161,7 +161,7 @@ h1 {
     font-size: 0.6em;
   }
 
-  .color-code{
+  .color-code {
     display: block;
   }
 
@@ -178,7 +178,7 @@ h1 {
     justify-content: center;
   }
 
-  .color-code table{
+  .color-code table {
     margin-bottom: 0.8em;
     margin-top: 0.8em;
   }
