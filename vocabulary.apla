@@ -1,0 +1,18 @@
+___________________ _ ___________ ________________ _ _____________ _________________ _ ___________ _________________ _ ______________
+Plus                + Conjugate   Minus            - Negate        Times             × Direction   Divide            ÷ Reciprocal    
+Maximum             ⌈ Ceiling     Minimum          ⌊ Floor         Power             * Exponential Logarithm         ⍟ Natural Log   
+Circular            ○ Pi Times    Binomial         ! Factorial     Deal              ? Roll        Residue           | Magnitude     
+And/LCM             ∧             Or/GCD           ∨               Nand              ⍲             Nor               ⍱               
+
+Equal               =             Not Equal        ≠ Unique Mask   Match             ≡ Depth       Not Match         ≢ Tally         
+Less Than           <             Less Or Equal    ≤               Greater Or Equal  ≥             Greater than      >               
+Index               ⌷ Materialise Take             ↑ Mix           Drop              ↓ Split       Reshape           ⍴ Shape         
+Partitioned Enclose ⊂ Enclose     Pick             ⊃ First         Left              ⊣ Same        Right             ⊢ Same          
+
+Partition           ⊆ Nest        Union            ∪ Unique        Intersection      ∩             Without           ~ Not           
+Indices Of          ⍳ Indices     Interval Index   ⍸ Where         Member Of         ∊ Enlist      Find              ⍷               
+Replicate           /             Expand           \               Replicate First   ⌿             Expand First      ⍀               
+Rotate              ⌽ Reverse     Rotate First     ⊖ Reverse First Catenate          , Ravel       Catenate First    ⍪ Table         
+
+Reorder Axes        ⍉ Transpose   Decode           ⊥               Encode            ⊤             Matrix Divide     ⌹ Matrix Inverse
+Namespace Execute   ⍎ Execute     Specified Format ⍕ Format        Collated Grade By ⍋ Grade Up    Collated Grade By ⍒ Grade Down    
