@@ -15,14 +15,14 @@ body {
 
 @font-face {
   font-family: "APL385";
-  src: local("APL385 Unicode"), url(../fonts/Apl385.ttf) format("truetype");
+  src: local("APL385 Unicode"), url(fonts/Apl385.ttf) format("truetype");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "APL333";
-  src: local("APL333"), url(../fonts/Apl333.ttf) format("truetype");
+  src: local("APL333"), url(fonts/Apl333.ttf) format("truetype");
   font-style: normal;
   font-display: swap;
 }
